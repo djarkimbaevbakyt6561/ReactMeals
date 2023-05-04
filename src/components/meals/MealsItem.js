@@ -20,7 +20,7 @@ const MealsItem = ({ price, title, description, id, key }) => {
                     <input onChange={getInputValue} name="amount" type="number" value={inputState} />
                 </InputContainer>
 
-                <Button plus={true}>Add</Button>
+                <Button circle={true} buttonState={true} plusState={true}>Add</Button>
             </Form>
 
         </Container>
@@ -72,8 +72,6 @@ const InputContainer = styled.div`
 display: flex;
 `
 const Form = styled.form`
-width: 155px;
-height: 85px;
 margin-top: 24px;
 display: flex;
 flex-direction: column;
@@ -98,6 +96,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 color: #222222;
+padding: 0;
 padding-left: 12px;
 margin-bottom: 12px;
 }

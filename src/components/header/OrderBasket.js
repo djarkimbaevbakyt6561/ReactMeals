@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { ReactComponent as BasketIcon } from '../../assets/icons/Group.svg'
 
-const OrderBasket = ({ children }) => {
+const OrderBasket = ({ children,onClick }) => {
     return (
-        <Button>
+        <Button onClick={onClick}>
             <BasketIcon />
             <OrderBasketTitle>
                 {children}

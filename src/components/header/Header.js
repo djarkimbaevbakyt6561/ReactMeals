@@ -1,11 +1,11 @@
 import styled from "styled-components"
 import OrderBasket from "./OrderBasket"
-const Header = () => {
+const Header = ({onClick}) => {
     return (
         <header style={{width: "100%"}}>
             <Container>
                 <ReactMeals>ReactMeals</ReactMeals>
-                <OrderBasket>Your Cart</OrderBasket>
+                <OrderBasket onClick={onClick}>Your Cart</OrderBasket>
             </Container>
         </header>
 
